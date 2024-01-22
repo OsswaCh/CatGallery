@@ -1,0 +1,65 @@
+instructions i copied from freeCodeCamp
+
+    - Commenting allows you to leave messages without affecting the browser display. It also allows you to make code inactive. A comment in HTML starts with <!--, contains any number of lines of text, and ends with -->. For example, the comment <!-- TODO: Remove h1 --> contains the text TODO: Remove h1.
+
+    - HTML5 has some elements that identify different content areas. These elements make your HTML easier to read and help with Search Engine Optimization (SEO) and accessibility.
+
+    - You can add images to your website by using the img element. img elements have an opening tag without a closing tag. A tag for an element without a closing tag is known as a self-closing tag.
+
+    - HTML attributes are special words used inside the opening tag of an element to control the element's behavior. The src attribute in an img element specifies the image's URL (where the image is located).
+
+    - The alt attribute is the HTML attribute used in HTML and XHTML documents to specify alternative text that is to be displayed in place of an element that cannot be rendered. 
+
+    - <a>: The Anchor element. The <a> HTML element (or anchor element), with its href attribute, creates a hyperlink to web pages, files, email addresses, locations in the same page, or anything else a URL can address. Content within each <a> should indicate the link's destination.
+
+    - Add a target attribute with the value _blank to the anchor (a) element's opening tag, so that the link opens in a new tab.
+
+    - The figure element represents self-contained content and will allow you to associate an image with a caption
+
+    - A figure caption (figcaption) element is used to add a caption to describe the image contained within the figure element. For example, <figcaption>A cute cat</figcaption> adds the caption A cute cat.
+    - Emphasize the word in the figcaption element by wrapping it in an emphasis em element.
+
+    - The code for an ordered list (ol) is similar to an unordered list, but list items in an ordered list are numbered when displayed.
+
+    - The strong element is used to indicate that some text is of strong importance or urgent.
+
+LAYOUT AND Search
+    - Notice that everything you've added to the page so far is inside the body element. All page content elements that should be rendered to the page go inside the body element. However, other important information goes inside the head element.
+
+    - All pages should begin with <!DOCTYPE html>. This special string is known as a declaration and ensures the browser tries to meet industry-wide specifications.
+
+    - The <meta> element in the <head> section of an HTML document is used to provide metadata or information about the document. Metadata doesn't affect the display of the page, but it provides information that can be useful for browsers, search engines, and other web services. Here are some commonly used attributes within the <meta> element:
+    
+
+FORMS   
+    - in the form element he action attribute indicates where form data should be sent. For example, <form action="/submit-url"></form> tells the browser that the form data should be sent to the path /submit-url. 
+    - The input element allows you several ways to collect data from a web form. Like img elements, input elements are self-closing and do not need closing tags.
+    - In order for a form's data to be accessed by the location specified in the action attribute, you must give the text field a name attribute and assign it a value to represent the data being submitted. For example, you could use the following syntax for an email address text field: <input type="text" name="email">.
+    - laceholder text is used to give people a hint about what kind of information to enter into an input. For example, <input type="text" placeholder="Email address">.
+    - o prevent a user from submitting your form when required information is missing, you need to add the required attribute to an input element. There's no need to set a value to the required attribute. Instead, just add the word required to the input element, making sure there is space between it and other attributes.
+
+
+BUTTONS
+    - Use the button element to create a clickable button. For example, <button>Click Here</button> creates a button with the text Click Here.
+    - Even though you added your button below the text input, they appear next to each other on the page. That's because both input and button elements are inline elements, which don't appear on new lines.
+    - The button you added will submit the form by default. However, relying on default behavior may cause confusion. Add the type attribute with the value submit to the button to make it clear that it is a submit button.
+    - You can use radio buttons for questions where you want only one answer out of multiple options.
+      Here is an example of a radio button with the option of cat: <input type="radio"> cat. Remember that input elements are self-closing.
+
+LABELS
+    - label elements are used to help associate the text for an input element with the input element itself (especially for assistive technologies like screen readers). For example, <label><input type="radio"> cat</label> makes it so clicking the word cat also selects the corresponding radio button.
+    
+    - The id attribute is used to identify specific HTML elements. Each id attribute's value must be unique from all other id values for the entire page.
+      It is also used by JavaScript to access and manipulate the element with the specific id.
+    
+    -  To make it so selecting one radio button automatically deselects the other, both buttons must have a name attribute with the same value.
+
+    - The value attribute specifies the initial value for a <button> in an HTML form. Note: In a form, the button and its value is only submitted if the button itself was used to submit the form.
+
+    - The fieldset element is used to group related inputs and labels together in a web form. fieldset elements are block-level elements, meaning that they appear on a new line.
+    - The legend element acts as a caption for the content in the fieldset element. It gives users context about what they should enter into that part of the form.    
+
+    - Forms commonly use checkboxes for questions that may have more than one answer. For example, here's a checkbox with the option of tacos: <input type="checkbox"> tacos.
+      Make sure there is a space between the element and the text.
+    
+    - In order to make a checkbox checked or radio button selected by default, you need to add the checked attribute to it. There's no need to set a value to the checked attribute. Instead, just add the word checked to the input element, making sure there is space between it and other attributes.
